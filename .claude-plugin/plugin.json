@@ -1,0 +1,12 @@
+{
+  "name": "speech-ai",
+  "displayName": "Speech AI",
+  "author": "brainiall",
+  "description": "Pronunciation assessment, speech-to-text, and text-to-speech for English. Assess pronunciation at phoneme, word, and sentence levels. Transcribe audio with word timestamps. Generate speech with 12 voices.",
+  "keywords": ["pronunciation", "speech", "tts", "stt", "english", "phoneme", "audio"],
+  "license": "Proprietary",
+  "version": "1.0.0",
+  "homepage": "https://brainiall.com",
+  "repository": "https://github.com/fasuizu-br/speech-ai-plugin",
+  "support": "fasuizu@brainiall.com"
+}

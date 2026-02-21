@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "speech-ai": {
+      "url": "https://pronunciation-mcp.thankfulfield-a7857897.eastus.azurecontainerapps.io/mcp",
+      "headers": {
+        "Ocp-Apim-Subscription-Key": "${SPEECH_AI_API_KEY}"
+      }
+    }
+  }
+}

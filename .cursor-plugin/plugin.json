@@ -1,0 +1,9 @@
+{
+  "name": "speech-ai",
+  "displayName": "Speech AI - Pronunciation Assessment",
+  "author": "brainiall",
+  "description": "AI-powered pronunciation assessment with phoneme-level scoring. Assess English pronunciation, convert text to speech, and transcribe audio.",
+  "keywords": ["pronunciation", "speech", "tts", "stt", "english", "phoneme", "mcp"],
+  "license": "Proprietary",
+  "version": "1.0.0"
+}

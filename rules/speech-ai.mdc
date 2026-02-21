@@ -1,0 +1,30 @@
+---
+description: Rules for working with Speech AI pronunciation assessment, STT, and TTS tools
+globs:
+alwaysApply: false
+---
+
+# Speech AI Rules
+
+When working with Speech AI tools, follow these guidelines:
+
+## Audio Quality
+- Always check audio SNR before scoring — below 15dB produces unreliable results
+- Recommend WAV format for best accuracy
+- Audio must be 0.5s-60s for pronunciation, 0.5s-120s for transcription
+
+## Pronunciation Assessment
+- Always include both the audio AND the reference text
+- Use `get_phoneme_inventory` to understand which sounds are evaluated
+- Present scores with context: 80+ is good, 60-79 acceptable, below 60 needs work
+- When confidence is below 0.5, warn the user the result may be unreliable
+
+## Text-to-Speech
+- Default voice is `af_heart` (American female, highest quality)
+- Speed range: 0.5 to 2.0 (1.0 is normal)
+- Max text length: 5000 characters
+- Output is base64-encoded WAV (24kHz, 16-bit PCM)
+
+## Privacy
+- Audio data is processed in real-time and not stored
+- No user data is retained after the API call completes

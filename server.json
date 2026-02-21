@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.fasuizu-br/speech-ai",
+  "title": "Speech AI - Pronunciation, STT & TTS",
+  "description": "AI-powered speech processing suite. Pronunciation assessment with phoneme-level scoring (0-100), speech-to-text with word timestamps, and text-to-speech with 12 English voices. Sub-300ms latency.",
+  "version": "2.0.0",
+  "repository": {
+    "url": "https://github.com/fasuizu-br/speech-ai-plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pronunciation-mcp.thankfulfield-a7857897.eastus.azurecontainerapps.io/mcp",
+      "headers": [
+        {
+          "name": "Ocp-Apim-Subscription-Key",
+          "description": "API subscription key from Azure Marketplace or direct registration",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
